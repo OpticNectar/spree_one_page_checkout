@@ -3,7 +3,7 @@ var disable_steps;
 disable_steps = function(all) {
   var elements;
   elements = $(".checkout_content.disabled-step");
-  elements.find("form input").attr("disabled", "disabled");
+  elements.find("form input, form button[type=\"submit\"]").attr("disabled", "disabled");
 
   elements.find('#registration a').attr('href', 'javascript:void(0);')
 };
